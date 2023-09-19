@@ -9,13 +9,18 @@
 
 a=3344556600; b=1.2222222;
 
-% ginven values for the legs of a right triangle
+% Given values for the legs of a right triangle
 % hypotenuse of a right triangle = sqrt(a^2 + b^2) (by Phythagorean thm)
 % difference = hypotenuse - the longer leg(a)= sqrt(a^2 + b^2) -a
 % since b is very small, sqrt(a^2 + b^2) is very close to a
 % so, difference has a potential loss of significance
-% need to use alternative form using rationalizing
+% need to use alternative form using rationalizing.
 
-difference=b^2/(sqrt(a^2 +b^2)+a) 
+sig_loss_diff = sqrt(a^2 + b^2) - a;
+display(sig_loss_diff);
+
+difference = (b^2)/(sqrt(a^2 +b^2)+a);
+
+display(difference);
 
 % equivalent to "sqrt(a^2 + b^2) -a"
