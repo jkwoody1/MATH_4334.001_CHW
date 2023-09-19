@@ -14,4 +14,6 @@ A(i,2)=3-3*x(i)+x(i)^2; %second column for equivalent form of f(x) with less com
 end
 
 % T = table(lat,lon,'VariableNames',["Latitude","Longitude"])
-Results = table(A,'Variable Names', ["f(x)", "g(x)"] ) % answer for the table
+Results = table(A(1:14,1),A(1:14,2), 'VariableNames', ["f(x)", "g(x)"]);
+display(Results);
+% answer for the table
