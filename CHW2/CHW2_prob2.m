@@ -2,14 +2,7 @@
 % How much longer is the hypotenuse than the longer leg? Give your answer with
 % at least four correct digits.
 
-for i=1:14
-x(i)=10^(-i); %given x values
-A(i,1)=(1-(1-x(i))^3)/x(i);% first column for f(x)
-A(i,2)=3-3*x(i)+x(i)^2; %second column for equivalent form of f(x)
-% to avoid loss of significance
-end
 
-A % answer for the table
 
 
 % Problem 2
