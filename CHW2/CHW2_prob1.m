@@ -6,10 +6,12 @@
 %that avoids significance loss, repeat the same calculation and make a table of
 %all the results obtained.
 
+A = [1:14,2];
+x = 1:14;
 for i=1:14
 x(i)=10^(-i); %given x values
-A(i,1)=(1-(1-x(i))^3)/x(i);% first column for f(x)
-A(i,2)=3-3*x(i)+x(i)^2; %second column for equivalent form of f(x) with less computations (g(x)) 
+A(i,1)=(1-(1-x(i))^3)/(x(i));% first column for f(x)
+A(i,2)= (3*x(i) - 3*((x(i))^2) + (x(i))^3)/ x(i) ; %second column for equivalent form of f(x) with less computations (g(x)) 
 % to avoid loss of significance
 end
 
