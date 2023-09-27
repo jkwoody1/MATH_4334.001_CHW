@@ -8,7 +8,7 @@ x0 = 1;
 x1 = 2; 
 
 % Set Tolerance 
-toelrance = 1 e - 8;
+toelrance = .00000001;
 
 
 % Secant Method Iterations
